@@ -53,15 +53,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-18 20:48:19</sys_created_on>
-        <sys_id>b6812ccfdb6f80102fbb487039961900</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_id>8f543d65db330010cd9d53184b9619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Match Characteristics</sys_name>
         <sys_package display_value="Triage" source="x_0505_triage">9de3c40adba340102fbb487039961988</sys_package>
         <sys_policy/>
         <sys_scope display_value="Triage">9de3c40adba340102fbb487039961988</sys_scope>
         <sys_update_name>sys_dictionary_x_0505_triage_triage_result_rule_match_characteristics</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-19 21:24:51</sys_updated_on>
+        <sys_updated_on>2020-03-26 21:13:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.sp-tagline-color {&#13;
+  color: $sp-tagline-color;&#13;
+}&#13;
+&#13;
+.wrapper-ask-search {&#13;
+  padding-top: 0px;&#13;
+  padding-right: 50px;&#13;
+  padding-bottom: 50px;&#13;
+  padding-left: 50px;&#13;
+}&#13;
+&#13;
+.matt-buck {&#13;
+  text-align: center;&#13;
+  padding-top: 20px;&#13;
+}&#13;
+&#13;
+.g-mb-60 {&#13;
+  margin-bottom: 4.28571rem !important;&#13;
+}&#13;
+&#13;
+.h1, .h2, .h3, .h4, .h5, .h6, .h7, h1, h2, h3, h4, h5, h6 {&#13;
+  line-height: 1.4;&#13;
+}&#13;
+&#13;
+.u-heading-v2-3--bottom::after {&#13;
+  margin-top: 1.07143rem;&#13;
+}&#13;
+&#13;
+.u-heading-v2-3--bottom::after, .u-heading-v2-3--top::before {&#13;
+  width: 5rem;&#13;
+  border-top-width: 1px;&#13;
+}&#13;
+&#13;
+.u-heading-v2-1--bottom::after, .u-heading-v2-1--top::before, .u-heading-v2-2--bottom::after, .u-heading-v2-2--top::before, .u-heading-v2-3--bottom::after, .u-heading-v2-3--top::before, .u-heading-v2-4--bottom::after, .u-heading-v2-4--top::before, .u-heading-v2-5--bottom::after, .u-heading-v2-5--top::before, .u-heading-v2-6--bottom::after, .u-heading-v2-6--top::before, .u-heading-v2-7--bottom::after, .u-heading-v2-7--top::before {&#13;
+  content: "";&#13;
+  display: inline-block;&#13;
+  border-top-style: solid;&#13;
+  border-color: #0097A9;&#13;
+}&#13;
+&#13;
+.g-brd-primary {&#13;
+  border-color: #0097A9 !important;&#13;
+}&#13;
+&#13;
+.g-mb-20 {&#13;
+  margin-bottom: 1.42857rem !important;&#13;
+}&#13;
+&#13;
+.g-font-weight-300 {&#13;
+  font-weight: 300 !important;&#13;
+}&#13;
+&#13;
+.buck-section {&#13;
+  padding-left: 0px !important;&#13;
+}&#13;
+&#13;
+.buck-section.color {&#13;
+  background-color: #2ab5bb;&#13;
+  background-image: -webkit-linear-gradient(315deg, #2ab5bb 8%, #2a7bbb);&#13;
+  background-image: linear-gradient(135deg, #2ab5bb 8%, #2a7bbb);&#13;
+}&#13;
+&#13;
+.buck-nasty {&#13;
+  margin-left: -15px;&#13;
+  margin-right: -15px;&#13;
+  color: white;&#13;
+}&#13;
+&#13;
+.sp-tagline-color {&#13;
+  color: $sp-tagline-color;&#13;
+}&#13;
+&#13;
+.wrapper-ask-search {&#13;
+  padding-top: 0px;&#13;
+  padding-bottom: 1.5rem;&#13;
+}&#13;
+&#13;
+.container-fluid {&#13;
+  margin-right: auto;&#13;
+  margin-left: auto;&#13;
+  //padding-left: 0px !important;&#13;
+  padding-right: 0px !important;&#13;
+}&#13;
+&#13;
+.title-text {&#13;
+  //padding-top: 2rem;&#13;
+  font-weight: 800;&#13;
+  margin-bottom: 0px !important;&#13;
+}&#13;
+&#13;
+.space-20 {&#13;
+  padding-top: 20px;&#13;
+}&#13;
+&#13;
+.title-subtext {&#13;
+  font-size: 20px;&#13;
+  font-weight: 300;&#13;
+  line-height: 1.4;&#13;
+}&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>ch_search</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>ConnectedH Global Search Block</name>
+        <option_schema>[{"name":"typeahead_search","default_value":"{title: 'Search Knowledge', size: 'lg', color: 'default'}","section":"Presentation","label":"Typeahead Search","type":"string"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[data.typeAheadSearch = $sp.getWidget('typeahead-search', options.typeahead_search);
+data.user = gs.getUserDisplayName();
+
+var today = new Date();  
+// add 3 hours because it's defaulted to Pacific time
+var curHr = today.getHours() + 3; 
+
+
+if (curHr < 12) {  
+  data.greeting = 'Good Morning';  
+} else if (curHr < 18) {  
+  data.greeting = 'Good Afternoon';  
+} else {  
+  data.greeting = 'Good Evening';  
+}]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-03 17:25:40</sys_created_on>
+        <sys_id>78bcec35db6c1010cd9d53184b961976</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>ConnectedH Global Search Block</sys_name>
+        <sys_package display_value="Triage" source="x_0505_triage">9de3c40adba340102fbb487039961988</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Triage">9de3c40adba340102fbb487039961988</sys_scope>
+        <sys_update_name>sp_widget_78bcec35db6c1010cd9d53184b961976</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-03 17:27:25</sys_updated_on>
+        <template><![CDATA[<div class="buck-nasty">
+  <div class="container-fluid color buck-section">
+    <header class="text-center">
+      <div class="title-text">
+        <h2 class="title-text">{{data.greeting}}, {{data.user}}!</h2>
+        <p class="title-subtext g-px-200--lg">Welcome to the Connected Health Portal.  We're here to help.</p>
+      </div>
+    </header>
+    <div id="homepage-search" class="container hidden-xs wrapper-ask-search">
+      <div class="wrapper-ask-search">
+        <h1 class="text-center text-4x m-b-lg sp-tagline-color" ng-bind="options.title"></h1>
+        <h4 ng-if="options.short_description" class="text-center m-b-lg sp-tagline-color" ng-bind="options.short_description"></h4>
+        <sp-widget widget="data.typeAheadSearch" />
+      </div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
